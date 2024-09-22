@@ -35,7 +35,7 @@ function DonateHandelN() {
         const historyDiv = document.getElementById('history'); // Select the history section
         historyDiv.innerHTML += `
           <div class="border border-solid rounded-3xl p-4 my-2">
-            <p>${donationAmountNoakhali} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+             <p class="text-[20px] font-[700]">${donationAmountNoakhali} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
             <p>Date: ${formattedDate}</p>
           </div>`;
     }
@@ -90,7 +90,7 @@ function DonateHandelF() {
         const historyDiv = document.getElementById('history'); // Select the history section
         historyDiv.innerHTML += `
           <div class="border border-solid rounded-3xl p-4 my-2">
-            <p>${donationAmountFeni} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+            <p class="text-[20px] font-[700]">${donationAmountFeni} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
             <p>Date: ${formattedDate}</p>
           </div>`;
     }
@@ -140,3 +140,21 @@ function DonateHandelQ() {
           </div>`;
     }
 }
+
+document.getElementById('button-donation').addEventListener('click', function() {
+    document.getElementById('donation-section').classList.remove('hidden');
+    document.getElementById('history').classList.add('hidden');
+    
+    // Add and remove Tailwind classes correctly
+    document.getElementById('button-donation').classList.add('bg-[#B4F461]');
+    document.getElementById('button-history').classList.remove('bg-[#B4F461]');
+});
+
+document.getElementById('button-history').addEventListener('click', function() {
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('history').classList.remove('hidden');
+    
+    // Add and remove Tailwind classes correctly
+    document.getElementById('button-history').classList.add('bg-[#B4F461]');
+    document.getElementById('button-donation').classList.remove('bg-[#B4F461]');
+});

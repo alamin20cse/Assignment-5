@@ -91,8 +91,8 @@
        <section class="bg-white">
             <!-- button -->
          <div class="flex justify-center gap-3 pt-10 pb-4">
-           <button  class="btn rounded-[8px] bg-[#B4F461] text-[#111111] px-8">Donation</button>
-           <button class="btn rounded-[8px]  text-[#111111B3] px-8">History</button>
+           <button id="button-donation"  class="btn rounded-[8px] bg-[#B4F461] text-[#111111] px-8">Donation</button>
+           <button id="button-history" class="btn rounded-[8px]  text-[#111111B3] px-8">History</button>
 
          </div>
        </section>
@@ -102,7 +102,7 @@
 
 
       <!-- not fixed -->
-       <div class="mt-[250px]">
+       <div id="donation-section" class="mt-[250px]">
         
         <!-- card section -->
         <section class="w-10/12 mx-auto flex flex-col gap-4">
@@ -213,19 +213,23 @@
 
        </section>
 
-       <!-- history part  -->
-        
-
-       <section class="hidden" id="history">
-        <h1 class="p-4">History</h1>
-
-
-       </section>
 
 
 
 
        </div>
+
+
+
+       
+       <!-- history part  -->
+        
+
+       <section class="hidden  mt-[250px]" id="history">
+        <h1 class="p-4 text-center text-3xl">History</h1>
+
+
+       </section>
 
     </main>
     
