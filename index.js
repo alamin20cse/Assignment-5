@@ -23,12 +23,21 @@ function DonateHandelN() {
         document.getElementById('taka-noakhali').innerText = afterTextTaka; // Use innerText to update the text content
         document.getElementById('taka-total').innerText = remaining; // Use innerText to update the total amount
 
+        
+
+        
+
         // Get the current date and time
         const now = new Date();
-        const formattedDate = now.toString(); // Example: "Tue Sep 17 2024 08:39:11 GMT+0600 (Bangladesh Standard Time)"
+        const formattedDate = now.toString(); // Format the date
 
-        // Display the formatted date in the console
-        console.log("Date:", formattedDate);
+        // Update the history section
+        const historyDiv = document.getElementById('history'); // Select the history section
+        historyDiv.innerHTML += `
+          <div class="border border-solid rounded-3xl p-4 my-2">
+            <p>${donationAmountNoakhali} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+            <p>Date: ${formattedDate}</p>
+          </div>`;
     }
 }
 
@@ -44,50 +53,90 @@ function DonateHandelN() {
 function DonateHandelF() {
 
 
-    const donationAmountFeni= getInputFieldValueById('input-feni');
-    const textTakaNoakhali = getTextFieldValueById('taka-noakhali');
+    const donationAmountFeni = getInputFieldValueById('input-feni');
+    const textTakaFeni = getTextFieldValueById('taka-feni');
     const totalAmount = getTextFieldValueById('taka-total');
-   
-
-
-   
-    console.log(donationAmountFeni);
-    
-
-
 
     
+    if (isNaN(donationAmountFeni)) {
+        alert('Please enter a valid number.');
+    } else if (donationAmountFeni < 0) {
+        alert("Donation amount cannot be negative.");
+    } else {
+        // Main work
+        let remaining = totalAmount - donationAmountFeni;
+        const afterTextTaka = textTakaFeni + donationAmountFeni;
 
-// Get the current date and time
-const now = new Date();
+        // Update the displayed values
+        document.getElementById('taka-feni').innerText = afterTextTaka; // Use innerText to update the text content
+        document.getElementById('taka-total').innerText = remaining; // Use innerText to update the total amount
 
-// Format the date as a string
-const formattedDate = now.toString(); // Example: "Tue Sep 17 2024 08:39:11 GMT+0600 (Bangladesh Standard Time)"
+      
 
-// Display the formatted date in the console
-console.log("Date:", formattedDate);
+
+
+
+
+
+
+
+
+
+        // Get the current date and time
+        const now = new Date();
+        const formattedDate = now.toString(); // Format the date
+
+        // Update the history section
+        const historyDiv = document.getElementById('history'); // Select the history section
+        historyDiv.innerHTML += `
+          <div class="border border-solid rounded-3xl p-4 my-2">
+            <p>${donationAmountFeni} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+            <p>Date: ${formattedDate}</p>
+          </div>`;
+    }
 
   
 }
+// Quata
 
 function DonateHandelQ() {
    
 
 
-    
-
-    const donationAmountQuota= getInputFieldValueById('input-quota');
-    console.log(donationAmountQuota);
-
+    const donationAmountQuota = getInputFieldValueById('input-quota');
+    const textTakaQuata = getTextFieldValueById('taka-quta');
+    const totalAmount = getTextFieldValueById('taka-total');
 
     
+    if (isNaN(donationAmountQuota)) {
+        alert('Please enter a valid number.');
+    } else if (donationAmountQuota < 0) {
+        alert("Donation amount cannot be negative.");
+    } else {
+        // Main work
+        let remaining = totalAmount - donationAmountQuota;
+        const afterTextTaka = textTakaQuata + donationAmountQuota;
 
-// Get the current date and time
-const now = new Date();
+        // Update the displayed values
+        document.getElementById('taka-quta').innerText = afterTextTaka; // Use innerText to update the text content
+        document.getElementById('taka-total').innerText = remaining; // Use innerText to update the total amount
 
-// Format the date as a string
-const formattedDate = now.toString(); // Example: "Tue Sep 17 2024 08:39:11 GMT+0600 (Bangladesh Standard Time)"
+        
 
-// Display the formatted date in the console
-console.log("Date:", formattedDate);
+
+
+
+
+        // Get the current date and time
+        const now = new Date();
+        const formattedDate = now.toString(); // Format the date
+
+        // Update the history section
+        const historyDiv = document.getElementById('history'); // Select the history section
+        historyDiv.innerHTML += `
+          <div class="border border-solid rounded-3xl p-4 my-2 ">
+            <p class="text-[20px] font-[700]">${donationAmountQuota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+            <p>Date: ${formattedDate}</p>
+          </div>`;
+    }
 }
