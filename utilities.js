@@ -14,6 +14,19 @@ function getInputFieldValueById(id)
 
 
 
+function getInputFieldBeforNumberValueById(id)
+{
+
+
+    const InputValue=document.getElementById(id).value;
+   
+    return InputValue;
+    
+    
+}
+
+
+
 
 function getTextFieldValueById(id)
 {
