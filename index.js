@@ -47,7 +47,7 @@ function DonateHandelN() {
         const historyDiv = document.getElementById('history'); 
         historyDiv.innerHTML += `
           <div class="border border-solid rounded-3xl p-4 my-2">
-             <p class="text-[20px] font-[700]">${donationAmountNoakhali} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+             <p class="text-[20px] font-[700]">${donationAmountNoakhali} Donate for Flood at Noakhali, Bangladesh</p>
             <p>Date: ${formattedDate}</p>
           </div>`;
 
