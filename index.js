@@ -152,6 +152,7 @@ function DonateHandelQ() {
           </div>`;
 
           my_modal_1.showModal();
+          
     }
 }
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 2</title>
+
+
+
+
+
+
+
+
+    
+    <!-- daisyui + tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonte wasom cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- font link -->
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- tail conf -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                book_btn_color: '#ABEF5F',
+
+              },
+              fontFamily: {
+                lexend:"Lexend",
+                }
+           
+
+              
+            }
+          }
+        }
+      </script>
+
+
+</head>
+<body>
+   <main>
+
+     <!-- fixed -->
+     <div class="fixed top-0 left-0 right-0">
+        <!-- nav section -->
+        <section class="bg-[#F9F7F3]">
+          <!-- nav -->
+      <nav class="w-10/12 mx-auto  pt-5 pb-10  ">
+         <div class="flex  justify-between items-center">
+            <a href="index.html">
+                <button class="btn lg:text-[20px] text-[12px] rounded-[8px] bg-[#B4F461] text-[#111111] px-4">Home</button>
+            </a>
+
+             <div class="flex justify-start items-center">
+                 <img src="assets/logo.png" alt="">
+                 <p class="lg:text-[20px] text-[12px] font-[600]">Donate Bangladesh</p>
+             </div>
+
+             <div class="flex justify-start items-center">
+                 <img src="assets/coin.png" alt="">
+                 <p class="lg:text-[20px] text-[12px] font-[600]"><span id="taka-total">5500</span> BDT</p>
+             </div>
+
+         </div>
+
+         
+      </nav>
+
+     
+     </section>
+     <!-- section button -->
+     <section class="bg-white">
+          <!-- button -->
+       <div class="flex justify-center gap-3 pt-10 pb-4">
+         <button id="button-donation"  class="btn rounded-[8px] bg-[#B4F461] text-[#111111] px-8">Donation</button>
+         <button id="button-history" class="btn rounded-[8px]  text-[#111111B3] px-8">History</button>
+
+       </div>
+     </section>
+    </div>
+
+
+    <!-- not fixed -->
+     <div class="w-10/12 mx-auto mt-[250px]">
+        <h1 class="text-[20px] font-[800]">Important FAQ </h1>
+
+
+
+
+
+
+        <!-- adfasfassfdsdffds -->
+        <div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each node corresponds to a part of the document, such as elements, attributes, and text content.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>You can select elements from the DOM using several JavaScript methods. Each method provides different ways to target HTML elements based on their tag name, class, ID, or other attributes.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+            
+        </div>
+        
+
+     </div>
+   </main>
+</body>
+</html>
