@@ -3,35 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index 2</title>
+    <title>Index 2</title>
 
-
-
-
-
-
-
-
-    
-    <!-- daisyui + tailwind -->
+    <!-- DaisyUI + Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- fonte wasom cdn  -->
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-    <!-- font link -->
-    
-
+    <!-- Google Fonts (Lexend) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-
-
-    <!-- tail conf -->
-
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
           theme: {
@@ -39,110 +25,86 @@
               colors: {
                 clifford: '#da373d',
                 book_btn_color: '#ABEF5F',
-
               },
               fontFamily: {
-                lexend:"Lexend",
-                }
-           
-
-              
+                lexend: "Lexend",
+              }
             }
           }
         }
       </script>
-
-
 </head>
 <body>
    <main>
-
-     <!-- fixed -->
-     <div class="fixed top-0 left-0 right-0">
-        <!-- nav section -->
+     <!-- Fixed Navbar -->
+     <div class="fixed top-0 left-0 right-0 z-50">
         <section class="bg-[#F9F7F3]">
-          <!-- nav -->
-      <nav class="w-10/12 mx-auto  pt-5 pb-10  ">
-         <div class="flex  justify-between items-center">
-            <a href="index.html">
-                <button class="btn lg:text-[20px] text-[12px] rounded-[8px] bg-[#B4F461] text-[#111111] px-4">Home</button>
-            </a>
+        
+          <nav class="w-10/12 mx-auto pt-5 pb-10">
+            <div class="flex justify-between items-center">
+               
+                <a href="index.html">
+                    <button class="btn lg:text-[20px] text-[12px] rounded-[8px] bg-[#B4F461] text-[#111111] px-4">Home</button>
+                </a>
+               
+                <div class="flex justify-start items-center">
+                    <img src="assets/logo.png" alt="Logo">
+                    <p class="lg:text-[20px] text-[12px] font-[600] ml-2">Donate Bangladesh</p>
+                </div>
+               
+                <div class="flex justify-start items-center">
+                    <img src="assets/coin.png" alt="Coin Icon">
+                    <p class="lg:text-[20px] text-[12px] font-[600] ml-2"><span id="taka-total">5500</span> BDT</p>
+                </div>
+            </div>
+          </nav>
+        </section>
+     </div>
 
-             <div class="flex justify-start items-center">
-                 <img src="assets/logo.png" alt="">
-                 <p class="lg:text-[20px] text-[12px] font-[600]">Donate Bangladesh</p>
-             </div>
+    <!-- Not fixed -->
+    <div class="w-10/12 mx-auto mt-[200px] z-10">
+        <h1 class="text-[20px] font-[800] py-4">Important FAQ</h1>
 
-             <div class="flex justify-start items-center">
-                 <img src="assets/coin.png" alt="">
-                 <p class="lg:text-[20px] text-[12px] font-[600]"><span id="taka-total">5500</span> BDT</p>
-             </div>
-
-         </div>
-
-         
-      </nav>
-
-     
-     </section>
-   
-    </div>
-
-
-    <!-- not fixed -->
-     <div class="w-10/12 mx-auto mt-[250px] ">
        
-        <h1 class="text-[20px] font-[800] py-4">Important FAQ </h1>
-
-
-
-
-
-
-        <!-- Accordin -->
         <div>
-
-            <div class="collapse collapse-arrow border border-solid rounded-none rounded-t-2xl ">
+            <!-- FAQ 1 -->
+            <div class="collapse collapse-arrow border border-solid rounded-none rounded-t-2xl">
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
                   <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each node corresponds to a part of the document, such as elements, attributes, and text content.</p>
                 </div>
-              </div>
-              <div class="collapse collapse-arrow border border-solid rounded-none">
+            </div>
+            <!-- FAQ 2 -->
+            <div class="collapse collapse-arrow border border-solid rounded-none">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
                   <p>You can select elements from the DOM using several JavaScript methods. Each method provides different ways to target HTML elements based on their tag name, class, ID, or other attributes.</p>
                 </div>
-              </div>
-
-              <div class="collapse collapse-arrow border border-solid rounded-none">
+            </div>
+            <!-- FAQ 3 -->
+            <div class="collapse collapse-arrow border border-solid rounded-none">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it usefule?</div>
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                 <div class="collapse-content">
-                  <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events from its child elements. Instead of adding listeners to each child, the parent listens for events that "bubble up" from the children. <br>
-
-                    Performance: Reduces the number of event listeners, improving performance, especially when handling many elements. <br>
-                    Dynamic elements: Easily handles events on dynamically added elements since the listener is on the parent.
-                
-                  </p>
+                  <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events from its child elements. Instead of adding listeners to each child, the parent listens for events that "bubble up" from the children.</p>
+                  <ul>
+                    <li>Performance: Reduces the number of event listeners, improving performance, especially with many elements.</li>
+                    <li>Dynamic elements: Easily handles events on dynamically added elements.</li>
+                  </ul>
                 </div>
-              </div>
-
-
-              <div class="collapse collapse-arrow  border border-solid rounded-none rounded-b-2xl ">
+            </div>
+            <!-- FAQ 4 -->
+            <div class="collapse collapse-arrow border border-solid rounded-none rounded-b-2xl">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's  attributes and styles using the DOM ?</div>
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
                   <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the input element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
                 </div>
-              </div>
-            
+            </div>
         </div>
-        
-
-     </div>
+    </div>
    </main>
 </body>
 </html>
