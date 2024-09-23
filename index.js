@@ -8,6 +8,7 @@ function DonateHandelN() {
     const donationAmountNoakhali = getInputFieldValueById('input-noakhali');
     const textTakaNoakhali = getTextFieldValueById('taka-noakhali');
     const totalAmount = getTextFieldValueById('taka-total');
+   
 
     
     if (isNaN(donationAmountNoakhali)) {
@@ -18,6 +19,7 @@ function DonateHandelN() {
         // Main work
         let remaining = totalAmount - donationAmountNoakhali;
         const afterTextTaka = textTakaNoakhali + donationAmountNoakhali;
+      
 
         // Update the displayed values
         document.getElementById('taka-noakhali').innerText = afterTextTaka; // Use innerText to update the text content
@@ -38,6 +40,9 @@ function DonateHandelN() {
              <p class="text-[20px] font-[700]">${donationAmountNoakhali} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
             <p>Date: ${formattedDate}</p>
           </div>`;
+
+
+          my_modal_1.showModal();
     }
 }
 
@@ -56,6 +61,7 @@ function DonateHandelF() {
     const donationAmountFeni = getInputFieldValueById('input-feni');
     const textTakaFeni = getTextFieldValueById('taka-feni');
     const totalAmount = getTextFieldValueById('taka-total');
+    let ck=0;
 
     
     if (isNaN(donationAmountFeni)) {
@@ -66,6 +72,7 @@ function DonateHandelF() {
         // Main work
         let remaining = totalAmount - donationAmountFeni;
         const afterTextTaka = textTakaFeni + donationAmountFeni;
+        ck=1;
 
         // Update the displayed values
         document.getElementById('taka-feni').innerText = afterTextTaka; // Use innerText to update the text content
@@ -93,7 +100,10 @@ function DonateHandelF() {
             <p class="text-[20px] font-[700]">${donationAmountFeni} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
             <p>Date: ${formattedDate}</p>
           </div>`;
+
+          my_modal_1.showModal();
     }
+    
 
   
 }
@@ -106,6 +116,7 @@ function DonateHandelQ() {
     const donationAmountQuota = getInputFieldValueById('input-quota');
     const textTakaQuata = getTextFieldValueById('taka-quta');
     const totalAmount = getTextFieldValueById('taka-total');
+    let ck=0;
 
     
     if (isNaN(donationAmountQuota)) {
@@ -116,6 +127,7 @@ function DonateHandelQ() {
         // Main work
         let remaining = totalAmount - donationAmountQuota;
         const afterTextTaka = textTakaQuata + donationAmountQuota;
+        ck=1;
 
         // Update the displayed values
         document.getElementById('taka-quta').innerText = afterTextTaka; // Use innerText to update the text content
@@ -138,6 +150,8 @@ function DonateHandelQ() {
             <p class="text-[20px] font-[700]">${donationAmountQuota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
             <p>Date: ${formattedDate}</p>
           </div>`;
+
+          my_modal_1.showModal();
     }
 }
 
