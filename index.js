@@ -90,7 +90,7 @@ function DonateHandelF() {
         // Main work
         let remaining = totalAmount - donationAmountFeni;
         const afterTextTaka = textTakaFeni + donationAmountFeni;
-        ck=1;
+       
 
        
         document.getElementById('taka-feni').innerText = afterTextTaka; 
@@ -130,7 +130,7 @@ function DonateHandelQ() {
     }
 
    
-    const donationAmountQuota = Number(ckEmpty);
+    const donationAmountQuota = getInputFieldValueById('input-quota');
     const textTakaQuata = getTextFieldValueById('taka-quta');
     const totalAmount = getTextFieldValueById('taka-total');
 
